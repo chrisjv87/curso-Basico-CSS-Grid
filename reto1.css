@@ -1,0 +1,28 @@
+/* Crear un grid de 2x2 donde los items se ubiquen en la esquina inferior derecha del contenedor. el contenedor debe de estar centrado. */
+
+/*
+content - contenido del elemento;
+item - elementos;
+self - un solo elemento
+
+justify-content/item/self: star/center/end = alineacion horizontal/filas
+align-content/item/self: star/center/end = alineacion vertical/columnas
+place-content/item/self: star/center/end = alineacion en ambos sentidos
+*/
+
+.contenedor {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    gap: 15px;
+    grid-template-columns: 150px 150px;
+    grid-auto-rows: 150px;
+    height: 600px;
+    place-content: center;
+    place-items: end;
+}
+
+.item {
+    border: 5px solid #00bcd4;
+    font-size: 4rem;
+}
