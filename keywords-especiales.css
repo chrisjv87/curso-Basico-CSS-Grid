@@ -2,7 +2,15 @@
     border: 5px solid #e1bee7;
     background-color: #fff1ff;
     display: grid;
-    grid-template-columns: min-content 3fr max-content 2fr;
+    grid-template-columns: repeat(auto-fit, minmax(100px, 1fr));
+}
+
+.contenedor-2 {
+    border: 5px solid #e1bee7;
+    background-color: #fff1ff;
+    display: grid;
+    margin-top: 100px;
+    grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
 }
 
 .item {
