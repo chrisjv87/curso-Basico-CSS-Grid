@@ -1,0 +1,70 @@
+<!--  
+
+La propiedad display: grid; en CSS se utiliza para definir un contenedor como un elemento de cuadrícula, estableciendo así un contexto de cuadrícula para sus elementos secundarios. Al aplicar display: grid; a un elemento contenedor, puedes utilizar las propiedades de Grid Layout para organizar y diseñar el diseño de los elementos secundarios en una cuadrícula bidimensional.
+
+--Propiedades de Contenedor
+Algunas de las propiedades de Grid Layout que puedes utilizar después de aplicar display: grid; incluyen:
+
+grid-template-columns y grid-template-rows: Definen el tamaño y la estructura de las columnas y filas de la cuadrícula.
+grid-gap o grid-column-gap y grid-row-gap: Especifican el espacio entre las celdas de la cuadrícula.
+grid-template-areas: Define áreas en la cuadrícula y asigna elementos secundarios a esas áreas.
+grid-auto-columns y grid-auto-rows: Especifican el tamaño de las columnas y filas automáticas.
+grid-auto-flow: Controla cómo se colocan automáticamente los elementos secundarios dentro de la cuadrícula.
+grid-column y grid-row: Especifican en qué columnas y filas debe colocarse un elemento secundario.
+
+La propiedad display: grid; permite utilizar el modelo de cuadrícula de CSS, proporcionando un enfoque flexible y poderoso para la maquetación de páginas web. 
+
+--Propiedades de Alineacion
+Estas propiedades son especialmente útiles para controlar la posición de los elementos y lograr un diseño más preciso. Aquí están algunas de las propiedades de alineación en Grid Layout:
+
+justify-items: Controla la alineación de los elementos secundarios a lo largo del eje de las columnas de la cuadrícula.
+align-items: Controla la alineación de los elementos secundarios a lo largo del eje de las filas de la cuadrícula.
+justify-content: Controla la alineación de las filas de la cuadrícula a lo largo del eje de las columnas.
+align-content: Controla la alineación de las columnas de la cuadrícula a lo largo del eje de las filas.
+justify-self: Permite ajustar la alineación de un elemento secundario individual a lo largo del eje de las columnas.
+align-self: Permite ajustar la alineación de un elemento secundario individual a lo largo del eje de las filas.
+
+Estas propiedades te brindan un control detallado sobre la posición y alineación de los elementos secundarios dentro de la cuadrícula, permitiéndote crear diseños precisos y adaptables. Puedes ajustar la alineación tanto a nivel del contenedor (usando justify-items, align-items, justify-content, align-content) como a nivel del elemento secundario individual (usando justify-self y align-self).
+
+--Propiedades de Ubicacion
+Las propiedades de ubicación en Grid Layout permiten controlar la ubicación específica de los elementos secundarios dentro de la cuadrícula. Aquí están algunas de las propiedades clave:
+
+grid-column y grid-row: Especifican en qué columnas y filas debe colocarse un elemento secundario. Pueden tomar valores numéricos, nombres de línea, o la palabra clave span para indicar cuántas columnas o filas debería abarcar el elemento.
+grid-area: Asigna un nombre a un área de la cuadrícula y asigna elementos secundarios a esa área.
+grid-template-areas: Define áreas en la cuadrícula y asigna elementos secundarios a esas áreas.
+grid-column-start, grid-column-end, grid-row-start, y grid-row-end: Permiten especificar el inicio y el final de las líneas de columna y fila a las que se debe asociar un elemento.
+
+Estas propiedades te permiten posicionar de manera precisa los elementos secundarios dentro de la cuadrícula, lo que facilita la creación de diseños complejos y personalizados. Puedes utilizar números, nombres de líneas o áreas, y la palabra clave span para lograr la disposición deseada.
+
+--Funciones Especiales
+En CSS Grid Layout, hay algunas funciones especiales que se utilizan para abordar casos específicos o para proporcionar funcionalidades adicionales. Aquí tienes algunas de las funciones más comunes y útiles:
+
+repeat(): La función repeat() se utiliza para repetir un patrón de tamaño de columna o fila en una cuadrícula. Esto es útil cuando deseas establecer un número específico de columnas o filas con el mismo tamaño.
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(3, 1fr); /* Crea 3 columnas con tamaño igual */
+}
+
+minmax(): La función minmax() se utiliza para establecer un rango entre el tamaño mínimo y máximo de una columna o fila. Esto es útil para crear un diseño flexible.
+
+.container {
+  display: grid;
+  grid-template-columns: minmax(100px, 1fr); /* Columna con tamaño mínimo de 100px y máximo de 1fr */
+}
+
+auto-fill y auto-fit: Estas palabras clave se utilizan con la función repeat() para crear un número automático de columnas o filas según el espacio disponible. auto-fill creará columnas o filas vacías si el espacio no se llena, mientras que auto-fit ajustará automáticamente el tamaño de las columnas o filas para llenar el espacio disponible.
+
+.container {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(100px, 1fr));
+}
+
+fit-content(): La función fit-content() se utiliza para especificar un tamaño máximo para una columna o fila, pero se ajusta automáticamente al contenido si este es más pequeño que el tamaño máximo.
+
+.container {
+  display: grid;
+  grid-template-columns: fit-content(100px) 1fr; /* Columna con tamaño máximo de 100px, ajustándose al contenido */
+}
+Estas funciones proporcionan flexibilidad y control adicionales al diseñar con Grid Layout, permitiéndote crear diseños más dinámicos y responsivos. Puedes combinar estas funciones para lograr resultados aún más personalizados.
+-->
